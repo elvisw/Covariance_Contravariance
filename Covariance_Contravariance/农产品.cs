@@ -70,7 +70,7 @@ namespace Covariance_Contravariance
         public void 接收货物(T 货物);
     }
 
-    class 消费者类<T> : I农产品消费者<T> where T : 农产品, new()
+    class 消费者类<T> : I农产品消费者<T> where T : 农产品
     {
         public void 接收货物(T 货物)
         {
