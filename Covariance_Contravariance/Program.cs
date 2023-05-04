@@ -5,7 +5,7 @@ static void 豆类交易员(I农产品生产者<豆类> 生产者, I农产品消
 {
     var 货物 = 生产者.获取产品();
     Console.WriteLine($"交易员收到货物，种类：{货物.GetType().Name}，单价：{货物.单价}，数量：{货物.数量}。");
-    decimal 佣金 = 货物.计算总价() * 0.1m;
+    decimal 佣金 = 货物.总价 * 0.1m;
     Console.WriteLine($"交易获得佣金：{佣金}");
     消费者.接收货物(货物);
 }
